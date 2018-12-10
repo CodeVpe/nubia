@@ -16,7 +16,7 @@ header {
 			&:hover a {
 				color:#919da1;
 			}
-			div.phones {								//宽度100%需要定位到body
+			div.swiper-container {								//宽度100%需要定位到body
 				position:absolute;top:66px;left:0;width:100%;height:240px;background: rgba(49,49,49,0.95);box-sizing: border-box;padding:40px 0 5px;
 				ul.phones_container {
 					width:1200px;height:165px;overflow: hidden;margin:0 auto;padding: 0 33px;box-sizing: border-box;position:relative;
