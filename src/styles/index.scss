@@ -1,0 +1,78 @@
+.layout {width:1200px;margin:0 auto;}
+
+/*header*/
+header {
+	height:66px;background:#282828;
+	a.logo {
+		width:140px;margin:8px 15px;float:left;
+		img {
+			width:140px;height:50px;
+			}
+	}
+	ul.nav {
+		color:#fff;float:left;font-size:14px;font-weight:300px;margin-left:50px;line-height:66px;
+		li {
+			float:left;padding:0 25px;color:#fff;
+			&:hover a {
+				color:#919da1;
+			}
+			div.phones {								//宽度100%需要定位到body
+				position:absolute;top:66px;left:0;width:100%;height:240px;background: rgba(49,49,49,0.95);box-sizing: border-box;padding:40px 0 5px;
+				ul.phones_container {
+					width:1200px;height:165px;overflow: hidden;margin:0 auto;padding: 0 33px;box-sizing: border-box;position:relative;
+// 					.btn_l,.btn_r {
+// 						height:165px;position:absolute;background:red;top:0;left:0;width:33px;
+// 					}
+// 					.swiper-button-next{}
+// 					.btn_r {right:0;}
+					li {
+						width:195px;height:165px;float:left;padding:0;
+						a {
+							img {
+								width:120px;height:120px;
+							}
+							span {
+								display:block;
+							}
+						}
+					}
+				}
+				
+				
+			}
+		}
+		 
+		
+	}
+	.nav_r {
+		float:right;
+		a {float:left;display:block;font-size:14px;
+			i {
+				line-height:66px;color:#fff;font-size: 20px;margin:0 10px;
+				&:hover {color:#919da1;}
+			}
+		}
+		.cart {
+			width:120px;height:66px;background:#f25c4a;line-height:66px;color:#fff;box-sizing: border-box;padding:0 20px;
+			i {color:#fff;&:hover{color:#fff;}}
+			}
+	}
+}
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
