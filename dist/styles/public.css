@@ -6,7 +6,8 @@ body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend,
 
 body {
   font: 12px  "微软雅黑";
-  word-wrap: break-word; }
+  word-wrap: break-word;
+  box-sizing: border-box; }
 
 a, u, s, del {
   color: #fff;

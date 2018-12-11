@@ -72,7 +72,7 @@ gulp.src('dist')  //改成src的目的，读取哪一个目录，作为服务器
       livereload: true,	//热部署(我的服务器不需要重启,修改了以后不需要重启服务器,修改文件以后,在页面上能立刻看到效果)
 //    directoryListing: true, //目录列表是否要展示
 //    open: true,	//是否自动打开浏览器
-      https:true,	//默认的是http开头打开的,如果希望是https开头打开的,则可以修改
+// 		https:true,	//默认的是http开头打开的,如果希望是https开头打开的,则可以修改
 //    port:10002,	//修改端口号
       proxies:[		//服务器代理
 	      {
