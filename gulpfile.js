@@ -40,7 +40,7 @@ gulp.task("buildCSS",()=>{
 //	gulp.src("./src/styles/*.css")
 	gulp.src("./src/styles/*.scss")	//将css变成scss，因为再styles的文件下已经没有css文件
 //	.pipe(cleancss())
-	.pipe(sass())
+	.pipe(sass().on('error',sass.logError))
 	.pipe(gulp.dest("./dist/styles"));
 });
 

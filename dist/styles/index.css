@@ -171,17 +171,18 @@ header {
       width: 310px;
       height: 180px; }
 
-.title, div.hot, .phones, .parts {
+/*标题*/
+.title, div.hot, .phones, .parts, .review, .video, .service {
   width: 1200px;
   height: 30px;
   margin: 0 auto; }
-  .title h3, div.hot h3, .phones h3, .parts h3 {
+  .title h3, div.hot h3, .phones h3, .parts h3, .review h3, .video h3, .service h3 {
     font-size: 24px;
     font-weight: 400;
     color: #666;
     float: left;
     line-height: 30px; }
-  .title a, div.hot a, .phones a, .parts a {
+  .title a, div.hot a, .phones a, .parts a, .review a, .video a, .service a {
     float: right;
     line-height: 30px;
     font-size: 12px;
@@ -189,6 +190,7 @@ header {
     width: 66px;
     height: 30px; }
 
+/*产品列表*/
 .products, div.hot, .phones {
   overflow: hidden;
   margin-right: auto;
@@ -231,7 +233,8 @@ header {
       left: 0;
       text-align: center;
       font-size: 16px;
-      color: red; }
+      color: red;
+      line-height: 20px; }
       .products .product i.price span.oldPrice, div.hot .product i.price span.oldPrice, .phones .product i.price span.oldPrice, .products .parts i.price span.oldPrice, div.hot .parts i.price span.oldPrice, .phones .parts i.price span.oldPrice {
         color: #ccc; }
         .products .product i.price span.oldPrice em, div.hot .product i.price span.oldPrice em, .phones .product i.price span.oldPrice em, .products .parts i.price span.oldPrice em, div.hot .parts i.price span.oldPrice em, .phones .parts i.price span.oldPrice em {
@@ -239,13 +242,14 @@ header {
           text-decoration: line-through;
           margin-left: 5px; }
       .products .product i.price span.vip, div.hot .product i.price span.vip, .phones .product i.price span.vip, .products .parts i.price span.vip, div.hot .parts i.price span.vip, .phones .parts i.price span.vip {
-        display: block;
+        display: inline-block;
         width: 70px;
         height: 20px;
         background: #ff8d00;
         font-size: 12px;
         color: #fff;
-        border-radius: 5px; }
+        border-radius: 5px;
+        line-height: 20px; }
     .products .product div.buy_bar, div.hot .product div.buy_bar, .phones .product div.buy_bar, .products .parts div.buy_bar, div.hot .parts div.buy_bar, .phones .parts div.buy_bar {
       display: none;
       width: 290px;
@@ -304,7 +308,7 @@ header {
 div.hot {
   height: auto;
   width: 1200px; }
-  div.hot .title, div.hot div.hot, div.hot .phones, div.hot .parts {
+  div.hot .title, div.hot div.hot, div.hot .phones, div.hot .parts, div.hot .review, div.hot .video, div.hot .service {
     margin: 20px 0; }
   div.hot .products, div.hot div.hot, div.hot .phones {
     margin-left: -12px; }
@@ -313,25 +317,44 @@ div.hot {
 .phones {
   height: auto;
   width: 1200px; }
-  .phones .title, .phones div.hot, .phones .phones, .phones .parts {
+  .phones .title, .phones div.hot, .phones .phones, .phones .parts, .phones .review, .phones .video, .phones .service {
     margin: 20px 0; }
   .phones .products, .phones div.hot, .phones .phones {
     margin-left: -12px; }
 
 /*精选配件*/
-.parts .products, .parts div.hot, .parts .phones {
-  margin-left: -12px; }
-
-.parts li.large {
-  width: 593px; }
-  .parts li.large a {
-    display: block;
-    width: 593px;
-    height: 450px; }
-    .parts li.large a img {
+.parts {
+  height: auto; }
+  .parts .title, .parts div.hot, .parts .phones, .parts .parts, .parts .review, .parts .video, .parts .service {
+    margin: 20px 0; }
+  .parts .products, .parts div.hot, .parts .phones {
+    margin-left: -12px; }
+    .parts .products .product i.price span.oldPrice em, .parts div.hot .product i.price span.oldPrice em, .parts .phones .product i.price span.oldPrice em, .parts .products .parts i.price span.oldPrice em, .parts div.hot .parts i.price span.oldPrice em, .parts .phones .parts i.price span.oldPrice em {
+      font-weight: 600;
+      text-decoration: none; }
+  .parts li.large {
+    width: 593px; }
+    .parts li.large a {
+      display: block;
       width: 593px;
       height: 450px; }
+      .parts li.large a img {
+        width: 593px;
+        height: 450px; }
 
-.parts i.price span.oldPrice em {
-  font-weight: 600;
-  text-decoration: none; }
+/*产品热评*/
+.review {
+  width: 100%;
+  background: #f4f3ef;
+  padding: 30px 0; }
+
+/*视频*/
+.video {
+  width: 100%;
+  background: #f4f3ef;
+  padding: 20px 0; }
+
+/*服务*/
+.service {
+  width: 100%;
+  background: #f4f3ef; }
