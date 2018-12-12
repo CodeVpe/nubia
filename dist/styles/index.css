@@ -171,17 +171,17 @@ header {
       width: 310px;
       height: 180px; }
 
-.title, div.hot, .phones {
+.title, div.hot, .phones, .parts {
   width: 1200px;
   height: 30px;
-  margin: 0 auto 20px; }
-  .title h3, div.hot h3, .phones h3 {
+  margin: 0 auto; }
+  .title h3, div.hot h3, .phones h3, .parts h3 {
     font-size: 24px;
     font-weight: 400;
     color: #666;
     float: left;
     line-height: 30px; }
-  .title a, div.hot a, .phones a {
+  .title a, div.hot a, .phones a, .parts a {
     float: right;
     line-height: 30px;
     font-size: 12px;
@@ -189,9 +189,149 @@ header {
     width: 66px;
     height: 30px; }
 
+.products, div.hot, .phones {
+  overflow: hidden;
+  margin-right: auto;
+  width: 1212px; }
+  .products .product, div.hot .product, .phones .product, .products .parts, div.hot .parts, .phones .parts {
+    width: 290px;
+    height: 450px;
+    background: #F4F3EF;
+    float: left;
+    margin-left: 13px;
+    margin-bottom: 13px;
+    position: relative; }
+    .products .product a.product_top, div.hot .product a.product_top, .phones .product a.product_top, .products .parts a.product_top, div.hot .parts a.product_top, .phones .parts a.product_top {
+      display: block;
+      width: 290px;
+      height: 300px;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      text-align: center;
+      cursor: pointer; }
+      .products .product a.product_top img, div.hot .product a.product_top img, .phones .product a.product_top img, .products .parts a.product_top img, div.hot .parts a.product_top img, .phones .parts a.product_top img {
+        width: 290px;
+        height: 248px; }
+      .products .product a.product_top h3.name, div.hot .product a.product_top h3.name, .phones .product a.product_top h3.name, .products .parts a.product_top h3.name, div.hot .parts a.product_top h3.name, .phones .parts a.product_top h3.name {
+        width: 100%;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center; }
+      .products .product a.product_top span, div.hot .product a.product_top span, .phones .product a.product_top span, .products .parts a.product_top span, div.hot .parts a.product_top span, .phones .parts a.product_top span {
+        display: block;
+        font-size: 12px;
+        color: red; }
+    .products .product i.price, div.hot .product i.price, .phones .product i.price, .products .parts i.price, div.hot .parts i.price, .phones .parts i.price {
+      display: block;
+      width: 290px;
+      height: 50px;
+      position: absolute;
+      top: 380px;
+      left: 0;
+      text-align: center;
+      font-size: 16px;
+      color: red; }
+      .products .product i.price span.oldPrice, div.hot .product i.price span.oldPrice, .phones .product i.price span.oldPrice, .products .parts i.price span.oldPrice, div.hot .parts i.price span.oldPrice, .phones .parts i.price span.oldPrice {
+        color: #ccc; }
+        .products .product i.price span.oldPrice em, div.hot .product i.price span.oldPrice em, .phones .product i.price span.oldPrice em, .products .parts i.price span.oldPrice em, div.hot .parts i.price span.oldPrice em, .phones .parts i.price span.oldPrice em {
+          color: #ccc;
+          text-decoration: line-through;
+          margin-left: 5px; }
+      .products .product i.price span.vip, div.hot .product i.price span.vip, .phones .product i.price span.vip, .products .parts i.price span.vip, div.hot .parts i.price span.vip, .phones .parts i.price span.vip {
+        display: block;
+        width: 70px;
+        height: 20px;
+        background: #ff8d00;
+        font-size: 12px;
+        color: #fff;
+        border-radius: 5px; }
+    .products .product div.buy_bar, div.hot .product div.buy_bar, .phones .product div.buy_bar, .products .parts div.buy_bar, div.hot .parts div.buy_bar, .phones .parts div.buy_bar {
+      display: none;
+      width: 290px;
+      height: 50px;
+      position: absolute;
+      top: 385px;
+      left: 0;
+      text-align: center;
+      padding: 0 10px; }
+      .products .product div.buy_bar a, div.hot .product div.buy_bar a, .phones .product div.buy_bar a, .products .parts div.buy_bar a, div.hot .parts div.buy_bar a, .phones .parts div.buy_bar a {
+        float: left;
+        width: 120px;
+        height: 36px;
+        border-radius: 20px;
+        background: #fff;
+        color: red;
+        text-align: center;
+        line-height: 36px;
+        font-size: 14px;
+        margin-left: 10px; }
+      .products .product div.buy_bar a.detail, div.hot .product div.buy_bar a.detail, .phones .product div.buy_bar a.detail, .products .parts div.buy_bar a.detail, div.hot .parts div.buy_bar a.detail, .phones .parts div.buy_bar a.detail {
+        background: #fff;
+        color: red; }
+        .products .product div.buy_bar a.detail:hover, div.hot .product div.buy_bar a.detail:hover, .phones .product div.buy_bar a.detail:hover, .products .parts div.buy_bar a.detail:hover, div.hot .parts div.buy_bar a.detail:hover, .phones .parts div.buy_bar a.detail:hover {
+          background: #fcfcfc; }
+      .products .product div.buy_bar a.buy, div.hot .product div.buy_bar a.buy, .phones .product div.buy_bar a.buy, .products .parts div.buy_bar a.buy, div.hot .parts div.buy_bar a.buy, .phones .parts div.buy_bar a.buy {
+        background: #f35c49;
+        color: #fff; }
+        .products .product div.buy_bar a.buy:hover, div.hot .product div.buy_bar a.buy:hover, .phones .product div.buy_bar a.buy:hover, .products .parts div.buy_bar a.buy:hover, div.hot .parts div.buy_bar a.buy:hover, .phones .parts div.buy_bar a.buy:hover {
+          background: #ec402a; }
+    .products .product .new, div.hot .product .new, .phones .product .new, .products .parts .new, div.hot .parts .new, .phones .parts .new {
+      width: 48px;
+      height: 48px;
+      background: #f35c49;
+      color: #fff;
+      border-radius: 50%;
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      line-height: 48px;
+      text-align: center;
+      font-size: 14px;
+      z-index: 2;
+      cursor: pointer; }
+      .products .product .new::after, div.hot .product .new::after, .phones .product .new::after, .products .parts .new::after, div.hot .parts .new::after, .phones .parts .new::after {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: #f35c49;
+        position: absolute;
+        top: 42px;
+        left: 45px;
+        content: ""; }
+
 /*热门产品*/
 div.hot {
-  clear: both;
-  padding-top: 40px; }
+  height: auto;
+  width: 1200px; }
+  div.hot .title, div.hot div.hot, div.hot .phones, div.hot .parts {
+    margin: 20px 0; }
+  div.hot .products, div.hot div.hot, div.hot .phones {
+    margin-left: -12px; }
 
 /*精品手机*/
+.phones {
+  height: auto;
+  width: 1200px; }
+  .phones .title, .phones div.hot, .phones .phones, .phones .parts {
+    margin: 20px 0; }
+  .phones .products, .phones div.hot, .phones .phones {
+    margin-left: -12px; }
+
+/*精选配件*/
+.parts .products, .parts div.hot, .parts .phones {
+  margin-left: -12px; }
+
+.parts li.large {
+  width: 593px; }
+  .parts li.large a {
+    display: block;
+    width: 593px;
+    height: 450px; }
+    .parts li.large a img {
+      width: 593px;
+      height: 450px; }
+
+.parts i.price span.oldPrice em {
+  font-weight: 600;
+  text-decoration: none; }

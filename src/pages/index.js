@@ -25,6 +25,23 @@ require(["../scripts/config.js"],function() {
 			$(this).children().stop().animate({width:"310",height:"180", left: "0px", top: "0px" },1000)
 		})
 		
+		//product悬浮显示购买
+		$(".product").hover(function(){
+			$(this).children(".buy_bar").show();
+		$(this).children(".price").hide();
+		},function(){
+			$(this).children(".buy_bar").hide();
+		$(this).children(".price").show();
+		})
+		
+		
+		
+		//product_top悬浮上移
+		$(".product_top").hover(function(){
+			$(this).stop().animate({top:"50px"},300)
+		},function(){
+			$(this).stop().animate({top:"60px"},300)
+		})
 		
 	})
 })

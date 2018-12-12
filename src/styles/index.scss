@@ -110,7 +110,7 @@ header {
 	}
 }
 
-.title {width:1200px;height:30px;margin:0 auto 20px;
+.title {width:1200px;height:30px;margin:0 auto;
 		h3{
 			font-size:24px;font-weight: 400;color:#666;float:left;line-height:30px;
 		}
@@ -119,19 +119,110 @@ header {
 		}
 	}
 	
-/*热门产品*/
-div.hot {clear:both;padding-top: 40px;
-	@extend .title;
+.products {
+	overflow: hidden;margin-right:auto;width:1212px;
 	.product {
+		width:290px;height:450px;background:#F4F3EF;float:left;margin-left:13px;margin-bottom:13px;position:relative;
+		
+		a.product_top {
+			display: block; width:290px;height:300px;position:absolute;top:60px;left:0;text-align:center;cursor: pointer;
+			img {
+				width:290px;height:248px;
+			}
+			h3.name {
+				width:100%;font-size:16px;font-weight:400;text-align:center;
+			}
+			span {
+				display:block;font-size:12px;color:red;
+			}
+		}
+		i.price {
+			display: block; width:290px;height:50px;position:absolute;top:380px;left:0;text-align:center;font-size:16px;color:red;
+			span.oldPrice{
+				color:#ccc;
+				em {
+					color:#ccc;text-decoration: line-through;margin-left:5px;
+				}
+			}
+			span.vip {
+				display:block;width:70px;height:20px;background:#ff8d00;font-size:12px;color:#fff;border-radius:5px;
+			}
+		}
+		div.buy_bar {
+			display:none;width:290px;height:50px;position:absolute;top:385px;left:0;text-align:center;padding:0 10px;
+			a {
+				float:left;width:120px;height:36px;border-radius:20px;background:#fff;color:red;text-align:center;line-height:36px;font-size:14px;margin-left:10px;
+			}
+			a.detail {
+				background:#fff;color:red;
+				&:hover {background: #fcfcfc;}
+			}
+			a.buy {
+				background:#f35c49;color:#fff;
+				&:hover {background: #ec402a;}
+			}
+		}
+		.new {
+			width:48px;height:48px;background:#f35c49;color:#fff;border-radius:50%;position:absolute;left:10px;top:10px;line-height:48px;text-align:center;font-size:14px;z-index:2;cursor:pointer;
+			&::after {
+				width:12px;height:12px;border-radius: 50%;background:#f35c49;position:absolute;top:42px;left:45px;content:"";
+			}
+		}
 		
 	}
 }
-
-/*精品手机*/
-.phones{
+	
+/*热门产品*/
+div.hot {height:auto;width:1200px;
 	@extend .title;
+	.title {
+		margin:20px 0;
+	}
+	@extend .products;
+	.products {
+		margin-left:-12px;
+	}
+	
 }
 
+/*精品手机*/
+.phones{height:auto;width:1200px;
+	@extend .title;
+	.title {
+		margin: 20px 0;
+	}
+	@extend .products;
+	.products {
+		margin-left:-12px;
+	}
+}
+
+/*精选配件*/
+.parts {
+	@extend .title;
+	@extend .product;
+	.products {
+		margin-left:-12px;
+	}
+	li.large {
+		width:593px;
+		a {
+			display:block;width:593px;height:450px;
+			img {
+				width:593px;height:450px;
+			}
+		}
+		
+	}
+	i.price {
+		span.oldPrice {
+			em {
+				font-weight: 600;text-decoration: none;
+				
+			}
+		}
+	}
+}
 
 
 
