@@ -4,6 +4,7 @@
   margin: 0 auto; }
 
 /*header*/
+/*header*/
 header {
   height: 66px;
   background: #282828; }
@@ -182,7 +183,7 @@ header {
     color: #666;
     float: left;
     line-height: 30px; }
-  .title a, div.hot a, .phones a, .parts a, .review a, .video a, .service a {
+  .title a.more, div.hot a.more, .phones a.more, .parts a.more, .review a.more, .video a.more, .service a.more {
     float: right;
     line-height: 30px;
     font-size: 12px;
@@ -219,7 +220,8 @@ header {
         width: 100%;
         font-size: 16px;
         font-weight: 400;
-        text-align: center; }
+        text-align: center;
+        color: black; }
       .products .product a.product_top span, div.hot .product a.product_top span, .phones .product a.product_top span, .products .parts a.product_top span, div.hot .parts a.product_top span, .phones .parts a.product_top span {
         display: block;
         font-size: 12px;
@@ -399,7 +401,7 @@ div.hot {
       .video dl dd h3 {
         font-weight: 400;
         font-size: 16px;
-        padding: 240px 0 20px;
+        padding: 40px 0 20px;
         color: black; }
   .video dl.first {
     margin-left: 1px; }
@@ -408,4 +410,86 @@ div.hot {
 .service {
   width: 100%;
   background: #f4f3ef;
-  clear: both; }
+  clear: both;
+  height: 400px; }
+  .service .service_top {
+    margin: 20px 0 13px -13px;
+    overflow: hidden; }
+    .service .service_top a {
+      float: left;
+      width: 593px;
+      height: 176px;
+      margin-left: 13px;
+      background: #FFF;
+      color: #666;
+      padding: 40px 60px;
+      box-sizing: border-box; }
+      .service .service_top a span {
+        float: left;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 80px;
+        border: 1px solid #666;
+        margin-right: 40px; }
+        .service .service_top a span i {
+          display: block;
+          width: 80px;
+          height: 80px;
+          font-size: 40px; }
+      .service .service_top a h3 {
+        font-size: 18px;
+        font-weight: 500; }
+      .service .service_top a p {
+        color: #aaa;
+        font-size: 14px; }
+  .service ul.service_bottom {
+    width: 100%;
+    height: 118px;
+    background: #fff;
+    clear: both;
+    overflow: hidden;
+    padding: 37px 0 23px;
+    box-sizing: border-box; }
+    .service ul.service_bottom li {
+      float: left;
+      width: 299px;
+      height: 58px;
+      border-right: 1px solid #ccc; }
+      .service ul.service_bottom li a {
+        color: #999;
+        font-size: 14px;
+        line-height: 58px; }
+        .service ul.service_bottom li a i {
+          float: left;
+          width: 50px;
+          height: 50px;
+          font-size: 40px;
+          margin: 0 10px 0 70px; }
+        .service ul.service_bottom li a span {
+          color: #aaa;
+          font-size: 14px; }
+      .service ul.service_bottom li:last-child {
+        border-right: none; }
+
+/*关于我们*/
+.aboutus {
+  background: #efeeeb;
+  height: 520px;
+  padding-top: 70px; }
+  .aboutus .layout {
+    padding-left: 24px;
+    box-sizing: border-box; }
+  .aboutus dl {
+    width: 196px;
+    float: left; }
+    .aboutus dl dt h3 {
+      font-size: 18px;
+      font-weight: 400;
+      margin-bottom: 15px; }
+    .aboutus dl dd {
+      height: 20px;
+      font-size: 12px; }
+      .aboutus dl dd a {
+        color: #999; }
