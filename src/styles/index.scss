@@ -112,7 +112,7 @@ header {
 
 /*标题*/
 .title {width:1200px;height:30px;margin:0 auto;
-		h3{
+		h3.txt{
 			font-size:24px;font-weight: 400;color:#666;float:left;line-height:30px;
 		}
 		a {
@@ -234,29 +234,52 @@ div.hot {height:auto;width:1200px;
 
 /*产品热评*/
 .review {
-	width:100%;background:#f4f3ef;padding:30px 0;
+	width:100%;background:#f4f3ef;padding:30px 0 0;
 	@extend .title;
 }
 
 /*视频*/
 .video {
-	width:100%;background:#f4f3ef;padding:20px 0;
+	width:100%;background:#f4f3ef;padding:20px 0;height:415px;
 	@extend .title;
+	.title {
+		margin:20px 0;
+	}
 	dl {
+		width:290px;margin-left:13px;height:334px;float:left;background: #fff;
 		dt {
-			a
+			a{
+				display:block;width:290px;height:200px;position: relative;
+				img {
+					width:100%;
+					
+				}
+				span {
+					display:block;width:52px;height:52px;background:rgba(210,210,210,0.6);border-radius: 50%;position: absolute;left:50%;top:50%;margin-left:-26px;margin-top:-26px;
+					&::after {
+						border:10px solid #fff;position:absolute;top:50%;left:50%;content:"";border-color:transparent transparent transparent #fff;border-left-width: 15px;margin-top:-10px;margin-left:-5px;
+					}
+				}
+				&:hover span{
+					background:rgba(235,30,30,0.6);
+				}
+			}
 		}
 		dd {
-			
+			text-align:center;font-size:14px;color:#666;
+			h3 {
+				font-weight:400;font-size:16px;padding:240px 0 20px;color:black;
+			}
 		}
 	}
+	dl.first {margin-left:1px;}
 }
 
 
 
 /*服务*/
 .service {
-	width:100%;background:#f4f3ef;
+	width:100%;background:#f4f3ef;clear:both;
 	@extend .title;
 }
 

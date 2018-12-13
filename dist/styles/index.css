@@ -176,7 +176,7 @@ header {
   width: 1200px;
   height: 30px;
   margin: 0 auto; }
-  .title h3, div.hot h3, .phones h3, .parts h3, .review h3, .video h3, .service h3 {
+  .title h3.txt, div.hot h3.txt, .phones h3.txt, .parts h3.txt, .review h3.txt, .video h3.txt, .service h3.txt {
     font-size: 24px;
     font-weight: 400;
     color: #666;
@@ -346,15 +346,66 @@ div.hot {
 .review {
   width: 100%;
   background: #f4f3ef;
-  padding: 30px 0; }
+  padding: 30px 0 0; }
 
 /*视频*/
 .video {
   width: 100%;
   background: #f4f3ef;
-  padding: 20px 0; }
+  padding: 20px 0;
+  height: 415px; }
+  .video .title, .video div.hot, .video .phones, .video .parts, .video .review, .video .video, .video .service {
+    margin: 20px 0; }
+  .video dl {
+    width: 290px;
+    margin-left: 13px;
+    height: 334px;
+    float: left;
+    background: #fff; }
+    .video dl dt a {
+      display: block;
+      width: 290px;
+      height: 200px;
+      position: relative; }
+      .video dl dt a img {
+        width: 100%; }
+      .video dl dt a span {
+        display: block;
+        width: 52px;
+        height: 52px;
+        background: rgba(210, 210, 210, 0.6);
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -26px;
+        margin-top: -26px; }
+        .video dl dt a span::after {
+          border: 10px solid #fff;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          content: "";
+          border-color: transparent transparent transparent #fff;
+          border-left-width: 15px;
+          margin-top: -10px;
+          margin-left: -5px; }
+      .video dl dt a:hover span {
+        background: rgba(235, 30, 30, 0.6); }
+    .video dl dd {
+      text-align: center;
+      font-size: 14px;
+      color: #666; }
+      .video dl dd h3 {
+        font-weight: 400;
+        font-size: 16px;
+        padding: 240px 0 20px;
+        color: black; }
+  .video dl.first {
+    margin-left: 1px; }
 
 /*服务*/
 .service {
   width: 100%;
-  background: #f4f3ef; }
+  background: #f4f3ef;
+  clear: both; }
