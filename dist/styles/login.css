@@ -1,0 +1,15 @@
+body {
+  background: #f5f5f5; }
+
+.container {
+  width: 850px;
+  margin: 60px auto;
+  background: #fff;
+  clor: black; }
+  .container h3 {
+    background: url(https://account.nubia.com/res1/images/nubia-logo.png) no-repeat left -55px;
+    width: 156px;
+    height: 55px;
+    margin: 0 auto; }
+  .container p.choice {
+    text-align: center; }

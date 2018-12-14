@@ -15,7 +15,10 @@ header {
 	ul.nav {
 		color:#fff;float:left;font-size:14px;font-weight:300px;margin-left:50px;line-height:66px;
 		li {
-			float:left;padding:0 25px;color:#fff;
+			float:left;padding:0 25px;
+			a {
+				color:#fff;
+			}
 			&:hover a {
 				color:#919da1;
 			}
@@ -372,7 +375,13 @@ div.hot {
 
 /*footer*/
 footer{
-	text-align:center;
+	text-align:center;height:215px;
+	a {
+		color:#e95f46;
+		&:hover {
+			color:#951b1b;
+		}
+	}
 	a.footer_logo {
 		width:105px;height:60px;margin:15px auto;display:block;
 		img{
@@ -406,17 +415,59 @@ footer{
 			}
 		}
 	}
-	p.copy{
-		color:#ccc;clear:both;height:40px;line-height:40px;
-		a {
-			color:red;
-			&:hover {
-				color:purple;
+	p{
+		color:#ccc;clear:both;height:30px;line-height:30px;
+		a.lang {
+			display:inline-block;width:90px;height:20px;border-radius:10px;color:#666;background:#CCC;line-height:20px;
+			i{
+				display: inline-block;width:16px;height:10px;background:url(https://static.nubia.cn/v2/images/spritesheet.png) no-repeat -2px -692px;border-radius: 2px;margin-right:4px;
+			}	
+		&:hover {
+			color:#ccc;background:#666;
+		}
+		}
+	}
+	p.safe {
+		a{
+			img{
+				width:83px;height:30px;margin-left:5px;display:inline-block;
+			}
+			
+		}
+		a.icp,a.ga{
+			img {
+				width:15px;height:15px;
 			}
 		}
 	}
+	
 }
 
+/*fixed*/
+.fixed {
+	position: fixed;right:40px;bottom:50px;
+	li {
+		width:70px;height:70px;margin-top:10px;border:1px solid #ccc;border-radius: 50%;line-height:70px;text-align:center;
+		i {
+			width:70px;height:70px;display: block;font-size:36px;color:#ccc;
+		}
+		&:hover {
+			border-color: #E95F46;
+			i {
+				color:#E95F46;
+			}
+		}
+		.icon-nubia {
+			font-size: 64px;line-height:70px;position: relative;
+			img {
+				display:none;position:absolute;right:80px;top:-35px;width:130px;height:130px;border:1px solid #ccc;background:#fff;border-radius:5px;z-index:1;
+				
+			}
+			&:hover img{display:block;}
+		}
+	
+	}
+}
 
 
 

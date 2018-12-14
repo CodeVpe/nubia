@@ -43,5 +43,9 @@ require(["../scripts/config.js"],function() {
 			$(this).stop().animate({top:"60px"},300)
 		})
 		
+		//回到顶部
+		$("#gotop").click(function(){
+			$("html").animate({scrollTop:0},500)
+		})
 	})
 })
