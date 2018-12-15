@@ -13,19 +13,33 @@
 	<body>
 		<div class="container">
 			<h3 class="logo"></h3>
-			<p>
-				<a href="#">努比亚账号登录</a>|<a href="#">手机验证码登录</a>
+			<p class="navTab">
+				<a class="accont" href="#">努比亚账号登录</a>|<a class="phone" href="#">手机验证码登录</a>
 			</p>
-			<form action="#">
-				<p><input type="text"></p>
-				<p><input type="password"></p>
-				<p><input type="submit" value="立即登录"></p>
-				
-				
-				
+			<form action="#" class="phonelogin">
+				<p class="phonenum"><input type="text" placeholder="手机号码"><span>请填写信息！</span></p>
+				<p class="validate"><input type="text" placeholder="请输入验证码(不区分大小写)"><a href="#"><img src="https://account.nubia.com/verification/draw.action?0.9708141727945803" alt=""></a><span>请填写信息！</span></p>
+				<p class="checknum"><input type="text" placeholder="请输入手机验证码"><a href="#">获取验证码</a><span>请填写信息！</span></p>
+				<p class="submit"><input type="submit" value="立即登录"></p>
 			</form>
+			<form action="#" class="maillogin">
+				<p class="mail"><input type="text" placeholder="邮箱/手机号码/用户名"><span>请填写信息！</span></p>
+				<p class="password"><input type="password" placeholder="密码为6-16个字符(数字/字母/符号至少包含两种)"><span>请填写信息！</span></p>
+				<p class="submit"><input type="submit" value="立即登录"></p>
+			</form>
+			<p class="newcount"><a href="#">注册新账号</a>|<a href="#">忘记密码?</a></p>
+			<p class="thirdlogin">
+				<span>其他方式登录：</span>
+				<a href="#" class="iconfont "></a>
+				<a href="#" class="iconfont "></a>
+				<a href="#" class="iconfont "></a>
+				<a href="#" class="iconfont "></a>
+			</p>
 		</div>
-		<script src="../scripts/libs/require.js" data-main="../pages/index.js"></script>
+		<footer>
+			2012-2018 努比亚 版权所有 <a href="#">粤ICP备10006213号-2</a> ICP经营许可证编号：粤B2-20120688 <a href="#"><img src="https://account.nubia.com/res1/images/govIcon.png" alt=""></a> 努比亚技术有限公司
+		</footer>
+		<script src="../scripts/libs/require.js" data-main="../pages/login.js"></script>
 	</body>
 	
 </html>

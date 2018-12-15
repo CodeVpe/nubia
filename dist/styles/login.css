@@ -5,11 +5,121 @@ body {
   width: 850px;
   margin: 60px auto;
   background: #fff;
-  clor: black; }
+  color: black;
+  padding-top: 30px; }
   .container h3 {
     background: url(https://account.nubia.com/res1/images/nubia-logo.png) no-repeat left -55px;
     width: 156px;
     height: 55px;
     margin: 0 auto; }
-  .container p.choice {
-    text-align: center; }
+  .container p.navTab {
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    margin: 10px auto; }
+    .container p.navTab a {
+      margin: 15px; }
+    .container p.navTab a.phone {
+      color: #e8380d; }
+  .container form {
+    margin-left: 245px;
+    margin-top: 20px; }
+    .container form input {
+      width: 340px;
+      height: 20px;
+      border: 1px solid #ccc;
+      outline: none;
+      padding: 15px 10px;
+      margin-right: 5px;
+      margin-bottom: 15px; }
+    .container form span {
+      color: red; }
+    .container form p.phonenum span {
+      color: red; }
+    .container form p.validate input {
+      width: 216px; }
+    .container form p.validate a img {
+      width: 118px;
+      height: 52px;
+      margin-right: 5px; }
+    .container form p.checknum input {
+      width: 245px; }
+    .container form p.checknum a {
+      display: inline-block;
+      width: 93px;
+      height: 50px;
+      border: 1px solid #ccc;
+      text-align: center;
+      line-height: 50px;
+      margin-left: -5px;
+      border-left: 0;
+      margin-right: 5px; }
+    .container form p.checknum form.maillogin {
+      position: absolute;
+      left: 245px;
+      top: 60px; }
+    .container form p.submit input {
+      width: 360px;
+      height: 50px;
+      background: #e8380d;
+      border: none;
+      margin-bottom: 20px;
+      color: #fff;
+      font-size: 18px;
+      cursor: pointer; }
+  .container p.newcount {
+    margin-right: 245px;
+    text-align: right;
+    font-size: 18px;
+    color: #d5d5d5; }
+    .container p.newcount a {
+      margin: 10px;
+      font-size: 14px; }
+    .container p.newcount a:first-child {
+      color: #e8380d; }
+  .container p.thirdlogin {
+    margin-left: 245px;
+    margin-top: 20px;
+    padding-bottom: 50px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px; }
+    .container p.thirdlogin span {
+      float: left;
+      margin-right: 10px;
+      line-height: 30px; }
+    .container p.thirdlogin a {
+      background: url(https://account.nubia.com/res1/images/third_login.png) no-repeat -1px -1px;
+      display: inline-block;
+      width: 28px;
+      height: 28px;
+      margin-right: 10px; }
+    .container p.thirdlogin a:nth-of-type(1) {
+      background-position: -59px -1px; }
+      .container p.thirdlogin a:nth-of-type(1):hover {
+        background-position: -59px -30px; }
+    .container p.thirdlogin a:nth-of-type(2) {
+      background-position: -88px -1px; }
+      .container p.thirdlogin a:nth-of-type(2):hover {
+        background-position: -88px -30px; }
+    .container p.thirdlogin a:nth-of-type(3) {
+      background-position: -30px -1px; }
+      .container p.thirdlogin a:nth-of-type(3):hover {
+        background-position: -30px -30px; }
+    .container p.thirdlogin a:nth-of-type(4) {
+      background-position: -1px -1px; }
+      .container p.thirdlogin a:nth-of-type(4):hover {
+        background-position: -1px -30px; }
+
+footer {
+  text-align: center;
+  color: #ccc; }
+  footer a {
+    color: #ccc;
+    margin: 5px; }
+    footer a:hover {
+      color: #000;
+      text-decoration: underline; }
+    footer a img {
+      width: 12px;
+      height: 12px; }
