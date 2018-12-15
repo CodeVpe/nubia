@@ -68,6 +68,9 @@ body{
 		}
 		a:first-child{
 			color:#e8380d;
+			&:hover {
+				text-decoration: underline;
+			}
 		}
 	}
 	p.thirdlogin {

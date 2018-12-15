@@ -42,10 +42,18 @@ body{
 			a{
 				display:inline-block;width:93px;height:50px;border:1px solid #ccc;text-align:center;line-height:50px;margin-left:-5px;border-left:0;margin-right:5px;
 			}
-			form.maillogin{
-				position:absolute;left:245px;top:60px;
+		}
+		p.privacy{
+			font-size:14px;
+			input{
+				width:15px;height:15px;line-height:30px;
 			}
-			
+			a{
+				color:#e8380d;margin-left:3px;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
 		}
 		p.submit {
 			input{
@@ -54,12 +62,13 @@ body{
 		}
 	}
 	p.newcount{
-		margin-right:245px;text-align:right;font-size:18px;color:#d5d5d5;
-		a {
-			margin:10px;font-size:14px;
-		}
+		margin-right:245px;text-align:right;font-size:18px;color:black;font-size:14px;padding-bottom:30px;
+		
 		a:first-child{
 			color:#e8380d;
+			&:hover {
+				text-decoration: underline;
+			}
 		}
 	}
 	p.thirdlogin {

@@ -12,15 +12,6 @@ body {
     width: 156px;
     height: 55px;
     margin: 0 auto; }
-  .container p.navTab {
-    text-align: center;
-    font-size: 18px;
-    color: #333;
-    margin: 10px auto; }
-    .container p.navTab a {
-      margin: 15px; }
-    .container p.navTab a.phone {
-      color: #e8380d; }
   .container form {
     margin-left: 245px;
     margin-top: 20px; }
@@ -54,10 +45,17 @@ body {
       margin-left: -5px;
       border-left: 0;
       margin-right: 5px; }
-    .container form p.checknum form.maillogin {
-      position: absolute;
-      left: 245px;
-      top: 60px; }
+    .container form p.privacy {
+      font-size: 14px; }
+      .container form p.privacy input {
+        width: 15px;
+        height: 15px;
+        line-height: 30px; }
+      .container form p.privacy a {
+        color: #e8380d;
+        margin-left: 3px; }
+        .container form p.privacy a:hover {
+          text-decoration: underline; }
     .container form p.submit input {
       width: 360px;
       height: 50px;
@@ -71,10 +69,9 @@ body {
     margin-right: 245px;
     text-align: right;
     font-size: 18px;
-    color: #d5d5d5; }
-    .container p.newcount a {
-      margin: 10px;
-      font-size: 14px; }
+    color: black;
+    font-size: 14px;
+    padding-bottom: 30px; }
     .container p.newcount a:first-child {
       color: #e8380d; }
       .container p.newcount a:first-child:hover {
