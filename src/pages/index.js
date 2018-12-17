@@ -47,5 +47,15 @@ require(["../scripts/config.js"],function() {
 		$("#gotop").click(function(){
 			$("html").animate({scrollTop:0},500)
 		})
+		
+		// 获取数据
+		$.ajax({
+			url:`https://shop.nubia.com/show/page/shop`,
+			// dataType:"jsonp",
+			success:function(data){
+				console.log(data);
+			}
+			})
+		
 	})
 })
