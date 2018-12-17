@@ -75,6 +75,60 @@ header {
   width: 100%;
   height: 180px; }
 
+/*购物车*/
+.cart_container {
+  width: 1170px;
+  margin: 0 auto; }
+  .cart_container p.cart_title {
+    text-align: left;
+    font-size: 14px;
+    color: black; }
+    .cart_container p.cart_title span {
+      color: red;
+      margin: 5px; }
+  .cart_container table {
+    border: 1px solid #eef0f0;
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 1170px; }
+    .cart_container table thead tr th {
+      background: #f7f9f9;
+      height: 50px;
+      text-align: center;
+      line-height: 50px;
+      font-size: 12px;
+      border: 1px solid #eef0f0; }
+    .cart_container table thead tr th:nth-of-type(1) {
+      width: 180px; }
+    .cart_container table thead tr th:nth-of-type(2) {
+      width: 454px; }
+    .cart_container table thead tr th:nth-of-type(3) {
+      width: 130px; }
+    .cart_container table thead tr th:nth-of-type(4) {
+      width: 194px; }
+    .cart_container table thead tr th:nth-of-type(5) {
+      width: 142px; }
+    .cart_container table thead tr th:nth-of-type(6) {
+      width: 70px; }
+    .cart_container table tbody tr td {
+      height: 124px;
+      border: 1px solid #eef0f0;
+      border-collapse: collapse;
+      text-align: center;
+      line-height: 124px; }
+    .cart_container table tbody tr td:nth-of-type(4) div {
+      width: 110px;
+      height: 26px;
+      border-radius: 5px;
+      background: #fff;
+      border: 1px solid #e0d7e3;
+      margin: 0 auto; }
+    .cart_container table tbody tr td:last-child i {
+      font-size: 12px;
+      cursor: pointer; }
+      .cart_container table tbody tr td:last-child i:hover {
+        color: red; }
+
 /*关于我们*/
 .aboutus {
   background: #efeeeb;

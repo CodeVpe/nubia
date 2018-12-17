@@ -50,7 +50,7 @@ require(["../scripts/config.js"],function() {
 		
 		// 获取数据
 		$.ajax({
-			url:`https://shop.nubia.com/show/page/shop`,
+			url:"https://shop.nubia.com/show/page/shop",
 			// dataType:"jsonp",
 			success:function(data){
 				console.log(data);
