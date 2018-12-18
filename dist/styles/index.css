@@ -137,7 +137,7 @@ header {
 /*热门产品*/
 .download {
   margin-top: 10px;
-  background: red; }
+  overflow: hidden; }
   .download ul.download_l {
     width: 243px;
     height: 180px;
@@ -310,7 +310,8 @@ header {
 /*热门产品*/
 div.hot {
   height: auto;
-  width: 1200px; }
+  width: 1200px;
+  margin: 0 auto; }
   div.hot .title, div.hot div.hot, div.hot .phones, div.hot .parts, div.hot .review, div.hot .video, div.hot .service {
     margin: 20px 0; }
   div.hot .products, div.hot div.hot, div.hot .phones {

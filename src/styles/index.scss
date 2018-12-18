@@ -89,7 +89,7 @@ header {
 	
 /*热门产品*/
 .download {
-	margin-top:10px;background:red;
+	margin-top:10px;overflow: hidden;
 	ul.download_l {width:243px;height:180px;float: left;
 		li {
 			a {
@@ -183,7 +183,7 @@ header {
 	
 /*热门产品*/
 div.hot {
-	height:auto;width:1200px;
+	height:auto;width:1200px;margin:0 auto;
 	@extend .title;
 	.title {
 		margin:20px 0;

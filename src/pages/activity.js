@@ -19,23 +19,12 @@ require(["../scripts/config.js"],function() {
 		})
 		
 		/*购物车数量加减*/
-	var jia = document.querySelector(".jia");
-	var jian = document.querySelector(".jian");
-	var num =  document.querySelector(".num");
-	jia.onclick = function(){
-		num.innerHTML++;
-		if(num.innerHTML > 10){
-			num.innerHTML = 10
-		}
-	}
-	jian.onclick = function(){
-		num.innerHTML--;
-		if(num.innerHTML <= 0){
-			alert("您确定不购买该产品？");
-			jian.parentElement.parentElement.parentElement.remove();
-		}
-	}
-		
+// 		$(".jia").click(function(){
+// 			
+// 			var num = $(this).prev("span").text();
+// 			num++;
+// 		})
+// 		
 		
 		// 购物车删除
 		$(".icon-guanbi3").click(function(){
