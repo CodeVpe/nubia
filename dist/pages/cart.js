@@ -18,29 +18,24 @@ require(["../scripts/config.js"],function() {
 				},
 		})
 		
-		// download鼠标悬浮放大
-		$(".downlink").hover(function(){
-			$(this).children().stop().animate({width:"330",height:"200", left: "-10px", top: "-10px" },1000)
-		},function(){
-			$(this).children().stop().animate({width:"310",height:"180", left: "0px", top: "0px" },1000)
+		/*购物车数量加减*/
+// 		$(".jia").click(function(){
+// 			
+// 			var num = $(this).prev("span").text();
+// 			num++;
+// 		})
+// 		
+		
+		// 购物车删除
+		$(".icon-guanbi3").click(function(){
+			$(this).parent().parent().remove();
 		})
 		
-		//product悬浮显示购买
-		$(".product").hover(function(){
-			$(this).children(".buy_bar").show();
-		$(this).children(".price").hide();
-		},function(){
-			$(this).children(".buy_bar").hide();
-		$(this).children(".price").show();
-		})
-		
-		
-		
-		//product_top悬浮上移
-		$(".product_top").hover(function(){
-			$(this).stop().animate({top:"50px"},300)
-		},function(){
-			$(this).stop().animate({top:"60px"},300)
+		/*进度条*/
+		$(".hot_product ul li").hover(function(){
+			$(this).find(".progressbar").stop().animate({width:"100%"},400)},
+			function(){
+			$(this).find(".progressbar").stop().animate({width:"15%"},400)
 		})
 		
 		//回到顶部
