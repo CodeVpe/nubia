@@ -66,3 +66,13 @@ mark {
   content: "";
   clear: both;
   display: block; }
+
+鼠标选中文字效果
+　　::selection {
+  background: #e73333;
+  color: #fff; }
+
+　　
+　　::-moz-selection {
+  background: #e73333;
+  color: #fff; }

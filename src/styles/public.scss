@@ -26,3 +26,8 @@ mark{background:none;}
 .clear:before{content:"";display:table;}/*解决margin向上传递*/
 .clear:after{content:"";clear:both;display:block;}
 
+鼠标选中文字效果
+/* webkit, opera, IE9 */
+　　::selection { background:#e73333; color:#fff;}
+　　/* mozilla firefox */
+　　::-moz-selection { background:#e73333; color:#fff;}

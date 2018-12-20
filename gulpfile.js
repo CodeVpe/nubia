@@ -40,7 +40,7 @@ gulp.task("buildCSS",()=>{
 //	gulp.src("./src/styles/*.css")
 	gulp.src("./src/styles/*.scss")	//将css变成scss，因为再styles的文件下已经没有css文件
 //	.pipe(cleancss())
-	.pipe(sass().on('error',sass.logError))
+	.pipe(sass().on('error',sass.logError))//sass报错继续运行
 	.pipe(gulp.dest("./dist/styles"));
 });
 
@@ -63,7 +63,7 @@ gulp.task("watching",()=>{
 	gulp.watch("./src/**/*.js",["buildHTML"]);
 	gulp.watch("./src/**/*.js",["buildJS"]);
 })
-//可是当
+
 
 
 gulp.task('webserver',["watching"],function() {
