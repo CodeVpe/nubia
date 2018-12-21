@@ -79,16 +79,10 @@ nav{
 	.phone_l{
 		float:left;width:565px;position:relative;
 		.imgs{
-			height:565px;position:absolute;top:0;left:0;display:none;
+			height:565px;position:absolute;top:0;left:0;
 			img{
-				position:absolute;top:0;left:0;display:none;
+				height:565px;position:absolute;top:0;left:0;position:absolute;top:0;left:0;
 			}
-			img:nth-of-type(1){
-				display:block;
-			}
-		}
-		.imgs:nth-of-type(1){
-			display:block;
 		}
 		ul.navbar{
 			position:absolute;top:555px;left:100px;display:none;

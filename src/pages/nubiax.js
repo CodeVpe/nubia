@@ -29,7 +29,9 @@ require(["../scripts/config.js"],function() {
 		/*图片tab切换*/ 
 		$(".navbar li").click(function(){
 			var img = $(".imgs img");
-			img.eq($(this).index()).show().siblings().hide();
+			// img.eq($(this).index()).show().siblings().hide();
+			console.log($(this).children().attr("src"))
+			img.attr("src",$(this).children().attr("src"));
 			$(this).css({"border":"1px solid red"}).siblings().css({"border":"1px solid #ccc"})
 			
 		})

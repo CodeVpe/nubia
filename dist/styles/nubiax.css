@@ -132,17 +132,15 @@ nav {
       height: 565px;
       position: absolute;
       top: 0;
-      left: 0;
-      display: none; }
+      left: 0; }
       .phone .phone_l .imgs img {
+        height: 565px;
         position: absolute;
         top: 0;
         left: 0;
-        display: none; }
-      .phone .phone_l .imgs img:nth-of-type(1) {
-        display: block; }
-    .phone .phone_l .imgs:nth-of-type(1) {
-      display: block; }
+        position: absolute;
+        top: 0;
+        left: 0; }
     .phone .phone_l ul.navbar {
       position: absolute;
       top: 555px;
