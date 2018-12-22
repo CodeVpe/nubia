@@ -269,23 +269,23 @@ nav {
         border: 1px solid #fb1515; }
     .phone .phone_r ul.package li {
       width: 180px;
-      height: 63px; }
-      .phone .phone_r ul.package li a {
-        line-height: 30px; }
-        .phone .phone_r ul.package li a span {
-          font-size: 12px;
-          height: 30px; }
-        .phone .phone_r ul.package li a p {
-          height: 30px; }
-          .phone .phone_r ul.package li a p span {
-            color: red;
-            font-size: 14px; }
+      height: 63px;
+      line-height: 30px; }
+      .phone .phone_r ul.package li span {
+        font-size: 12px;
+        height: 30px; }
+      .phone .phone_r ul.package li p {
+        height: 30px; }
+        .phone .phone_r ul.package li p span {
+          color: red;
+          font-size: 14px; }
     .phone .phone_r ul.ensure li {
       width: auto;
       height: 63px;
       border: 1px solid #ccc;
-      padding: 20px 10px;
-      cursor: pointer; }
+      padding: 0 10px;
+      cursor: pointer;
+      line-height: 63px; }
     .phone .phone_r p.choice {
       margin-top: 60px;
       font-size: 18px;
@@ -308,7 +308,8 @@ nav {
       width: 180px;
       height: 63px;
       margin-top: 2px;
-      margin-right: 10px; }
+      margin-right: 10px;
+      cursor: auto; }
       .phone .phone_r .huabei ul.huabeis li p {
         height: 30px;
         line-height: 30px;

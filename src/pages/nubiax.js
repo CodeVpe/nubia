@@ -20,31 +20,40 @@ require(["../scripts/config.js"],function() {
 		
 		// 选择颜色
 		var colorli = $(".phone_r ul:nth-child(5)");
+		var img = $(".imgs img");
+
 		colorli.children().click(function(){
 			$(".navbar").eq($(this).index()).show().siblings().hide();
-			$(this).addClass("active").siblings().removeClass("active");
+			// img.attr("src",$(this).children().attr("src"));
+			img.attr("src",$(".navbar").eq($(this).index()).children().children().attr("src"));
+			$(".navbar").eq($(this).index()).children().eq(0).css({"border":"1px solid red"}).siblings().css({"border":"1px solid #ccc"});
+			// $(".navbar").eq($(this).index()).children().siblings().css({"border":"1px solid #ccc"});
+			
+			
+			
+			$(this).addClass("active").siblings().removeClass("active");//让颜色li加边框
 		})
 		
 	
 		/*图片tab切换*/ 
 		$(".navbar li").click(function(){
-			var img = $(".imgs img");
 			// img.eq($(this).index()).show().siblings().hide();
-			console.log($(this).children().attr("src"))
+			// console.log($(this).children().attr("src"))
 			img.attr("src",$(this).children().attr("src"));
+			
 			$(this).css({"border":"1px solid red"}).siblings().css({"border":"1px solid #ccc"})
 			
 		})
 		
 		
 	
-// 	$.ajax({
-// 		url:"https://shop.nubia.com/show/product/getExt?productId=760&specId=1127",
-// 		success:function(data){
-// 			console.log(data)
-// 		}
-// 	})
-// 	
+	$.ajax({
+		url:"https://shop.nubia.com/show/product/getExt?productId=760&specId=1098",
+		success:function(data){
+			console.log(data)
+		}
+	})
+	
 	
 		//回到顶部
 		$("#gotop").click(function(){

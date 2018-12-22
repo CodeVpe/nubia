@@ -112,15 +112,15 @@ nav{
 				}
 				.shareall{
 					position: absolute;
-    left: 0;
-    top: -130px;
-    width: 110px;
-    transition: all 0.3s ease-in;
-    height: 130px;
-    padding-left: 35px;
-    padding-top: 3px;
-    background: url(http://oss.static.nubia.cn/upload/597af07ae449136.png) no-repeat center center;
-    background-size: 100%;
+					left: 0;
+					top: -130px;
+					width: 110px;
+					transition: all 0.3s ease-in;
+					height: 130px;
+					padding-left: 35px;
+					padding-top: 3px;
+					background: url(http://oss.static.nubia.cn/upload/597af07ae449136.png) no-repeat center center;
+					background-size: 100%;
 					div{
 						a{
 							
@@ -181,24 +181,21 @@ nav{
 		}
 		ul.package{
 			li{
-				width:180px;height:63px;
-				a{
-					line-height:30px;
+				width:180px;height:63px;line-height:30px;
+				span{
+					font-size:12px;height:30px;
+				}
+				p{
+					height:30px;
 					span{
-						font-size:12px;height:30px;
-					}
-					p{
-						height:30px;
-						span{
-							color:red;font-size:14px;
-						}
+						color:red;font-size:14px;
 					}
 				}
 			}
 		}
 		ul.ensure{
 			li{
-				width:auto;height:63px;border:1px solid #ccc;padding:20px 10px;cursor:pointer;
+				width:auto;height:63px;border:1px solid #ccc;padding:0 10px;cursor:pointer;line-height:63px;
 			}
 		}
 		p.choice{
@@ -219,7 +216,7 @@ nav{
 			}
 			ul.huabeis{
 				li{
-					width:180px;height:63px;margin-top:2px;margin-right:10px;
+					width:180px;height:63px;margin-top:2px;margin-right:10px;cursor: auto;
 					p{
 						height:30px;line-height:30px;color:#666;font-size:14px;
 					}
@@ -232,6 +229,18 @@ nav{
 	}
 }
 
+// /*详情选项卡*/
+// .detailbar{
+// 	clear:both;background:red;
+// 	.layout{
+// 		.detail{
+// 			float:left;width:80px;height:
+// 		}
+// 		.parameter{
+// 			float:left;
+// 		}
+// 	}
+// }
 
 
 
