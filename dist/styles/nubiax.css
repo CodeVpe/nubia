@@ -328,6 +328,16 @@ nav {
       margin-top: 45px;
       margin-bottom: 120px; }
 
+/*详情选项卡*/
+.detailbar {
+  clear: both;
+  background: red; }
+  .detailbar .layout .detail {
+    float: left;
+    width: 80px; }
+  .detailbar .layout .parameter {
+    float: left; }
+
 /*关于我们*/
 .aboutus {
   background: #efeeeb;

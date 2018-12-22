@@ -72,8 +72,7 @@ header {
 /*banner*/
 .banner {
   width: 100%;
-  height: 520px;
-  background: #000; }
+  height: 520px; }
   .banner div.layout {
     position: relative; }
     .banner div.layout div.banner_l {
@@ -95,9 +94,6 @@ header {
         font-weight: 200;
         display: block;
         color: black; }
-        .banner div.layout div.banner_l h2 a.banner_items:hover {
-          background: #fff;
-          color: red; }
       .banner div.layout div.banner_l h2 ul.items_list {
         position: absolute;
         left: 240px;
@@ -105,34 +101,49 @@ header {
         height: 520px;
         padding: 7px 0px 3px;
         box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-content: flex-start;
         background: #fff;
         display: none; }
-        .banner div.layout div.banner_l h2 ul.items_list li a {
-          float: left;
-          overflow: hidden;
-          display: block;
-          clear: both;
-          width: 240px;
-          height: 60px;
-          margin-bottom: 25px;
-          background: #fff; }
-          .banner div.layout div.banner_l h2 ul.items_list li a img {
-            width: 60px;
+        .banner div.layout div.banner_l h2 ul.items_list li {
+          float: left; }
+          .banner div.layout div.banner_l h2 ul.items_list li a {
+            overflow: hidden;
+            display: block;
+            clear: both;
+            width: 240px;
             height: 60px;
-            float: left; }
-          .banner div.layout div.banner_l h2 ul.items_list li a h3 {
-            font-size: 12px;
-            font-weight: 200;
-            float: left;
-            line-height: 60px;
-            margin-left: 10px;
-            color: black; }
-        .banner div.layout div.banner_l h2 ul.items_list li:hover h3 {
-          color: red; }
+            margin-bottom: 25px;
+            background: #fff; }
+            .banner div.layout div.banner_l h2 ul.items_list li a img {
+              width: 60px;
+              height: 60px;
+              float: left; }
+            .banner div.layout div.banner_l h2 ul.items_list li a h3 {
+              font-size: 12px;
+              font-weight: 200;
+              float: left;
+              line-height: 60px;
+              margin-left: 10px;
+              color: black; }
+          .banner div.layout div.banner_l h2 ul.items_list li:hover h3 {
+            color: red; }
+      .banner div.layout div.banner_l h2:hover ul {
+        display: block; }
+      .banner div.layout div.banner_l h2:hover {
+        background: #fff;
+        color: red; }
+    .banner div.layout .swiper-wrapper {
+      width: 100%;
+      height: 520px; }
+      .banner div.layout .swiper-wrapper li.swiper-slide {
+        width: 100%;
+        height: 520px; }
+        .banner div.layout .swiper-wrapper li.swiper-slide a {
+          display: block;
+          width: 100%;
+          height: 520px; }
+          .banner div.layout .swiper-wrapper li.swiper-slide a img {
+            width: 100%;
+            height: 520px; }
 
 /*热门产品*/
 .download {

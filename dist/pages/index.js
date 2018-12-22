@@ -49,20 +49,20 @@ require(["../scripts/config.js"],function() {
 		})
 		
 		// 获取数据
-		$.ajax({
-			url:"https://shop.nubia.com/show/page/shop",
-			// type:"GET",
-			 // dataType:"json",  //数据格式设置为jsonp
-            // jsonp:"callback",  //Jquery生成验证参数的名称
-						// contentType: "application/json",
-            success:function(data){  //成功的回调函数
-              console.log(data);
-            },
-            error: function (e) {
-                alert("error");
-            }
-
-			})
-		
+// 		$.ajax({
+// 			url:"https://shop.nubia.com/show/page/shop",
+// 			// type:"GET",
+// 			 // dataType:"json",  //数据格式设置为jsonp
+//             // jsonp:"callback",  //Jquery生成验证参数的名称
+// 						// contentType: "application/json",
+//             success:function(data){  //成功的回调函数
+//               console.log(data);
+//             },
+//             error: function (e) {
+//                 alert("error");
+//             }
+// 
+// 			})
+// 		
 	})
 })

@@ -1,7 +1,8 @@
 # 项目名称：nubia手机商城
 
 ### index.html是主页
-### login.html是登录注册页
+### login.html是登录页
+### register.html是注册页面
 ### cart.html是购物车
 ### nubiax.html是商品详情页
 

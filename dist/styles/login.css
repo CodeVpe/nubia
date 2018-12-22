@@ -7,7 +7,7 @@ body {
   background: #fff;
   color: black;
   padding-top: 30px; }
-  .container h3 {
+  .container h3.logo {
     background: url(https://account.nubia.com/res1/images/nubia-logo.png) no-repeat left -55px;
     width: 156px;
     height: 55px;
@@ -19,7 +19,7 @@ body {
     margin: 10px auto; }
     .container p.navTab a {
       margin: 15px; }
-    .container p.navTab a.phone {
+    .container p.navTab a.active {
       color: #e8380d; }
   .container form {
     margin-left: 245px;
@@ -67,6 +67,10 @@ body {
       color: #fff;
       font-size: 18px;
       cursor: pointer; }
+  .container form.phonelogin {
+    display: none; }
+  .container form.maillogin {
+    display: block; }
   .container p.newcount {
     margin-right: 245px;
     text-align: right;
