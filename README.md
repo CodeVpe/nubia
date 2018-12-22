@@ -1,9 +1,9 @@
 # 项目名称：nubia手机商城
 
-## index.html是主页
-## login.html是登录注册页
-## cart.html是购物车
-## nubiax.html是商品详情页
+### index.html是主页
+### login.html是登录注册页
+### cart.html是购物车
+### nubiax.html是商品详情页
 
 ## 使用说明：
 ### 命令行执行 gulp webserver
