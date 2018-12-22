@@ -6,9 +6,8 @@
 ### nubiax.html是商品详情页
 
 ## 使用说明：
-### git地址
-``` git clone https://github.com/CodeVpe/nubia.git
-```
+### git clone https://github.com/CodeVpe/nubia.git
+
 ### 命令行执行 gulp webserver
 ### 浏览器打开 https://localhost:8000/pages/*.html
 
