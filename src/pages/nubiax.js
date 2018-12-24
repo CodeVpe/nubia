@@ -44,7 +44,21 @@ require(["../scripts/config.js"],function() {
 			$(this).css({"border":"1px solid red"}).siblings().css({"border":"1px solid #ccc"})
 			
 		})
+
+		// 详情图tab切换
+		$(".detail").click(function(){
+			$(".detailimgs").show().next().hide();
+			$(this).addClass("active").next().removeClass("active");
+		})
+		$(".parameter").click(function(){
+			$(".detailimgs2").show().prev().hide();
+			$(this).addClass("active").prev().removeClass("active");
+		})
 		
+		// 点击加红框
+		$("ul li").click(function(){
+			$(this).addClass("active").siblings().removeClass("active");
+		})
 		
 	
 // 	$.ajax({
