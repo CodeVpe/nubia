@@ -331,12 +331,33 @@ nav {
 /*详情选项卡*/
 .detailbar {
   clear: both;
-  background: red; }
-  .detailbar .layout .detail {
-    float: left;
-    width: 80px; }
-  .detailbar .layout .parameter {
-    float: left; }
+  height: 60px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px;
+  padding: 14px 0;
+  text-align: center;
+  box-sizing: border-box;
+  line-height: 32px;
+  font-size: 16px; }
+  .detailbar .layout {
+    overflow: auto; }
+    .detailbar .layout .detail {
+      float: left;
+      width: 80px;
+      height: 22px;
+      padding-right: 50px;
+      border-right: 1px solid black;
+      line-height: 22px;
+      cursor: pointer; }
+    .detailbar .layout .parameter {
+      float: left;
+      width: 80px;
+      height: 22px;
+      padding-left: 50px;
+      line-height: 22px;
+      cursor: pointer; }
+    .detailbar .layout .active {
+      color: red; }
 
 /*关于我们*/
 .aboutus {

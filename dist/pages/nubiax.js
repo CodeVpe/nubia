@@ -47,12 +47,12 @@ require(["../scripts/config.js"],function() {
 		
 		
 	
-	$.ajax({
-		url:"https://shop.nubia.com/show/product/getExt?productId=760&specId=1098",
-		success:function(data){
-			console.log(data)
-		}
-	})
+// 	$.ajax({
+// 		url:"https://shop.nubia.com/show/product/getExt?productId=760&specId=1098",
+// 		success:function(data){
+// 			console.log(data)
+// 		}
+// 	})
 	
 	
 		//回到顶部
